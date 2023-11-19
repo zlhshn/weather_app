@@ -6,13 +6,13 @@
 }
 
 body {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgb(81, 102, 114) 35%,
-    rgb(90, 103, 105) 100%
-  );
+  background-image:url(./img/sky-7218043_1280.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:4rem 0rem;
+ 
 }
 
 .container {
@@ -20,13 +20,15 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
-  width: 40%;
+  background-color:hsla(0, 0%, 3%, 0.5);
+  backdrop-filter: 20px;
+  width: 400px;
+  border: 3px solid gray;
   border-radius: 20px;
   margin: auto;
-  margin-top: 4rem;
-  padding: 1rem;
+  padding: 2rem;
   gap: 2rem;
+  color: white;
 }
 
 .search {
@@ -71,7 +73,7 @@ margin-top: 2rem;
 }
 
 .weather h2{
-    margin-top: 1rem;
+    margin-top: 1.4rem;
 
 
 
@@ -84,6 +86,21 @@ margin-top: 2rem;
     font-size: .8rem;
     line-height: 1rem;
     align-items: center;
-    margin-top: 3rem;
+ margin-top: 1rem;
     gap: .3rem;
+}
+
+#description{
+
+  margin-top: 4rem;
+}
+
+
+@media screen and (max-width:400px) {
+  .container{
+    width: 80%;
+  }
+
+ 
+  
 }
